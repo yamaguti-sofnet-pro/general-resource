@@ -129,7 +129,6 @@ AnalyzeDescriptionsAndCommands
 declare -i order=999;
 while [[ order -ne 0 ]]; do
   DisplayPrompt $order
-  local order
   read -p "  ? " order
   if [[ order -ne 0 ]]; then
     WhetherToExecute $((order-1))
